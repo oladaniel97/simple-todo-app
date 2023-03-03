@@ -1,8 +1,10 @@
 from django.shortcuts import render, redirect
 from .models import Todo
 from .forms import TodoForm
+from django.views.decorators.csrf import csrf_exempt
 
 # Create your views here.
+@csrf_exempt
 def index(request):
     items = Todo.objects.all()
 

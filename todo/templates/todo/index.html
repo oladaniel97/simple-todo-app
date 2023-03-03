@@ -14,8 +14,8 @@
             <h2>Personal Todo App</h2>
         </div>
         <div>
-            <form action="/" method="post" class="input-group">
-                {% comment %} {%csrf_token%} {% endcomment %}
+            <form action="" method="post" class="input-group">
+                {% csrf_token %}
                 {{ form.item }}
                 <button type="submit" class="btn btn-primary">Add</button>
             </form>
