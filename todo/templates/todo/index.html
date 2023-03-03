@@ -15,7 +15,7 @@
         </div>
         <div>
             <form action="/" method="post" class="input-group">
-                {%csrf_token%}
+                {% comment %} {%csrf_token%} {% endcomment %}
                 {{ form.item }}
                 <button type="submit" class="btn btn-primary">Add</button>
             </form>
